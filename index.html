@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRYMSA - Nosotros</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    
+<style>
+    body {
+        font-family: 'Roboto', sans-serif;
+        color: #333;
+    }
+    h1, h2, h3 {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 700;
+    }
+    .navbar {
+        background: linear-gradient(90deg, #004080, #002050);
+    }
+    .navbar-brand img {
+        height: 50px;
+    }
+    .hero-section {
+        background: url('img/nosotros-hero.jpg') no-repeat center center/cover;
+        height: 60vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        text-align: center;
+    }
+    .hero-section h1 {
+        font-size: 3.5rem;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    .about-section {
+        padding: 80px 0;
+    }
+    .about-section h2 {
+        color: #004080;
+        margin-bottom: 40px;
+    }
+    .about-section p {
+        font-size: 1.1rem;
+        line-height: 1.8;
+    }
+    .mission-values-section {
+        background-color: #f8f9fa;
+        padding: 80px 0;
+    }
+    .mission-values-section h2 {
+        color: #004080;
+        margin-bottom: 40px;
+    }
+    .mission-values-section .card {
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        text-align: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        height: 100%; 
+        display: flex;
+        flex-direction: column;
+    }
+    .mission-values-section .card-body {
+        flex: 1; 
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; 
+    }
+    .mission-values-section .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+    .mission-values-section .card i {
+        font-size: 2rem;
+        color: #004080;
+        margin-bottom: 15px;
+    }
+    footer {
+        background: #002050;
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+    }
+    .btn-primary {
+        background: #004080;
+        border: none;
+        padding: 10px 20px;
+        font-size: 1rem;
+        transition: background 0.3s ease, transform 0.3s ease;
+    }
+    .btn-primary:hover {
+        background: #002050;
+        transform: translateY(-2px);
+    }
+    .navbar {
+        background: #002366;
+        border-bottom: 3px solid #FF0000;
+    }
+    .nav-link {
+        font-weight: 500;
+        color: #fff !important;
+        margin: 0 1rem;
+        position: relative;
+    }
+    .nav-link:hover {
+        color: #FFD700 !important;
+    }
+
+    /* Media queries añadidas para responsividad */
+    @media (max-width: 992px) {
+        .hero-section h1 {
+            font-size: 2.5rem;
+        }
+        
+        .about-section,
+        .mission-values-section {
+            padding: 50px 0;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .navbar-brand img {
+            height: 40px;
+        }
+        
+        .hero-section {
+            height: 50vh;
+        }
+        
+        .hero-section h1 {
+            font-size: 2rem;
+            padding: 0 15px;
+        }
+        
+        .about-section h2,
+        .mission-values-section h2 {
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+        }
+        
+        .nav-link {
+            margin: 0 0.5rem;
+        }
+        
+        .mission-values-section .card {
+            margin-bottom: 30px;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .hero-section {
+            height: 40vh;
+        }
+        
+        .hero-section h1 {
+            font-size: 1.8rem;
+        }
+        
+        .about-section p {
+            font-size: 1rem;
+        }
+        
+        .btn-primary {
+            width: 100%;
+            display: block;
+            margin: 10px auto;
+        }
+        
+        .navbar-collapse {
+            background: rgba(0, 35, 102, 0.95);
+            padding: 15px;
+            margin-top: 10px;
+        }
+        
+        .nav-link {
+            margin: 5px 0;
+            display: block;
+            text-align: center;
+        }
+    }
+</style>
+
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="img/logo.png" alt="TRYMSA Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="catalogo.html">Catálogo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    
+    <section class="hero-section">
+        <div class="container">
+            <h1 class="animate__animated animate__fadeInDown">Nosotros</h1>
+        </div>
+    </section>
+
+    
+    <section class="about-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6" data-aos="fade-right">
+                    <h2>Nuestra Historia</h2>
+                    <p style="text-align: justify;">
+                        La empresa fue fundada en el año 2022, con el objetivo de satisfacer la creciente demanda de refacciones y accesorios para vehículos de transporte pesado, específicamente tractocamiones. Desde sus inicios, se enfocó en ofrecer productos de alta calidad que garantizaran el óptimo desempeño y la seguridad de estos vehículos, fundamentales para la industria del transporte y la logística. 
+                    </p>
+                    <p style="text-align: justify;">
+                        En su primer año de operación, la empresa comenzó distribuyendo una selección de refacciones esenciales, destacándose por su compromiso con la confiabilidad y el servicio personalizado, valores que marcaron el inicio de su trayectoria en el mercado.
+                    </p>
+                </div>
+                <div class="col-md-6" data-aos="fade-left">
+                    <img src="img/catalogo/Trymsa.jpeg" alt="Nuestra Historia" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="mission-values-section">
+        <div class="container">
+            <h2 class="text-center" data-aos="fade-up">Misión y Valores</h2>
+            <div class="row">
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card">
+                        <div class="card-body">
+                            <i class="fas fa-bullseye"></i>
+                            <h3>Misión</h3>
+                            <p style="text-align: justify;">
+                                TRYMSA es una empresa que busca brindar soluciones confiables y económicas en refacciones para vehículos pesados, tratando de ofrecer la mejor calidad en los productos y servicios para poder garantizar la satisfacción de los clientes y esto pueda contribuir a una mejora del rendimiento de los vehículos, mejorando así el desempeño de los transportes en nuestra comunidad.                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card">
+                        <div class="card-body">
+                            <i class="fas fa-handshake"></i>
+                            <h3>Visión</h3>
+                            <p style="text-align: justify;">
+                                Lograr que la empresa tenga un mayor reconocimiento en la comercialización de refacciones para tracto camiones, debido a la gran calidad de los productos, la buena atención al servicio al cliente y el gran compromiso con la evolución del sector de transporte, lo cual contribuye al éxito de la empresa como al de sus clientes. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card">
+                        <div class="card-body">
+                            <i class="fas fa-heart"></i>
+                            <h3>Valores</h3>
+                            <p style="text-align: justify;">
+                                <strong>Calidad:</strong> Ofrecemos productos y servicios de la más alta calidad. <br>
+                                <strong>Integridad:</strong> Actuamos con honestidad y transparencia. <br>
+                                <strong>Innovación:</strong> Buscamos constantemente nuevas soluciones. <br>
+                                <strong>Compromiso:</strong> Nos esforzamos por superar las expectativas de nuestros clientes.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 TRYMSA. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
